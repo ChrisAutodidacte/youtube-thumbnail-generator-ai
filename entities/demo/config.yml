@@ -1,0 +1,83 @@
+# =============================================================================
+# YouTube Thumbnail Configuration — Sample Entity: DEMO CREATOR
+# =============================================================================
+# Ready-to-use demo channel profile.
+# Duplicate this folder or entities/_template/ to create your own channel!
+# =============================================================================
+
+# --- ENTITY IDENTITY ---
+entity:
+  name: "Demo Creator"
+  description: "Working demo channel profile for the AI thumbnail generator."
+  language: "en"
+  editorial_line: |
+    Practical AI tutorials, developer productivity tools, and automation workflows.
+    Tone: energetic, modern, accessible, and authoritative.
+
+# --- FORMAT & DIMENSIONS ---
+format:
+  width: 1280
+  height: 720
+  ratio: "16:9"
+  output_type: "jpg"
+
+# --- GEMINI API (NanoBanana) ---
+api:
+  model: "gemini-3-pro-image-preview"
+  action: "streamGenerateContent"
+  endpoint_template: "https://generativelanguage.googleapis.com/v1beta/models/{model}:{action}?key={api_key}"
+  method: "POST"
+  env_variable: "NANOBANANA_API_KEY"
+  image_config:
+    aspect_ratio: "16:9"
+    image_size: "1K"
+
+# --- PHOTO CATALOG (relative to entities/demo/photos/) ---
+photos:
+  - file: "avatar-portrait.png"
+    style: "transparent-cutout"
+    description: "Modern silhouette avatar on transparent background."
+    placement: "bottom-right corner inside circular glowing frame"
+
+# --- LAYOUTS ---
+layouts:
+  - name: "standard-right"
+    description: "Top title, central 3D illustration, creator portrait bottom-right"
+    affinities: ["tutorial", "productivity", "guide", "tools"]
+    prompt_composition: |
+      Upper area: Large extra-bold title with strong visual contrast.
+      Center-left: Clear thematic 3D/isometric illustration of the topic.
+      Bottom-right: Clean dark background area reserved for local creator portrait overlay.
+
+# --- BRAND GUIDELINES ---
+brand:
+  background: "Modern dark gradient (midnight navy #0a1128 to deep black #050510)"
+  main_title_color: "Crisp White #FFFFFF and Electric Cyan #00E5FF"
+  subtitle_color: "Bright Vivid Yellow #FFD700"
+  title_typography: "Extra-bold, modern sans-serif, high-impact readability"
+
+# --- TITLING RULES ---
+title_rules:
+  max_title_length: 28
+  max_subtitle_length: 45
+  style: "Short, punchy, curiosity-inducing, focused on viewer benefit"
+
+# --- PROMPT TEMPLATE ---
+prompt_template: |
+  Create a modern professional YouTube thumbnail image, 1280x720 pixels, 16:9 ratio.
+  
+  BACKGROUND: {brand.background}. Subtle discreet geometric grid lines.
+  
+  COMPOSITION LAYOUT:
+  {layout_composition}
+  
+  TEXT STYLE:
+  - Main title "{title}" in {brand.title_typography}. Colors: {brand.main_title_color}.
+  - Subtitle "{subtitle}" in {brand.subtitle_color}.
+  
+  ILLUSTRATION:
+  - {illustration_description}
+  - Creative visual hook: {creative_element}
+  
+  STYLE: Clean, modern, high CTR contrast. No watermark, no logo, no distorted human faces.
+  CRITICAL: Reserve bottom-right corner as a clean dark space for local portrait composite.

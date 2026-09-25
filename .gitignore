@@ -1,0 +1,12 @@
+.env
+output/**/*.jpg
+output/**/*.png
+output/**/*.txt
+!output/.gitkeep
+!output/**/.gitkeep
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+request.json
+response.json
