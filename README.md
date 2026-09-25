@@ -1,6 +1,6 @@
 # 🎨 YouTube Thumbnail Generator — Multi-Entity & AI
 
-> 🇫🇷 **Looking for the French version?** See the French repository: [vignette-youtube-generator](https://github.com/ChrisAutodidacte/vignette-youtube-generator)
+> 🇫🇷 **Looking for the French version?** See the French repository: [generateur-IA-vignette-youtube](https://github.com/ChrisAutodidacte/generateur-IA-vignette-youtube)
 
 > **Generate professional, high-CTR YouTube thumbnails** using AI (Google Gemini Image Generation) and a local 2-step pipeline, driven directly by a **Claude Code** skill or standalone Python scripts.
 
