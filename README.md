@@ -161,10 +161,21 @@ Distributed under the **MIT License**. Free for personal and commercial use. See
 
 ---
 
-## 💼 Custom Automation & Consulting
+## 👨‍💻 About the Author — Chris Figures It Out
 
-This generator was crafted by **Chris Autodidacte** to streamline high-quality video production without expensive creative subscriptions.
+I’m **Chris**, a self-taught creator who likes to figure things out.
 
-Looking for custom AI engineering, workflow automation, or enterprise integration?
-* 🌐 Visit **[chrisconseil.fr](https://chrisconseil.fr)** for tailored consulting & automation solutions.
-* 📺 Watch behind-the-scenes engineering videos on YouTube: **[@ChrisAutodidacte](https://www.youtube.com/@ChrisAutodidacte)**
+I explore AI, automation, software, and digital tools — not by pretending to have all the answers, but by actually trying things, breaking things, and finding practical solutions to real-world problems.
+
+On this channel, I share what I discover: useful tools, experiments, workflows, and things I build myself.
+
+> *No hype. No guru talk. Just one simple principle:*  
+> **"If there’s a problem, let’s figure it out."**
+
+---
+
+### 💼 Work & Contact
+* 📺 English Channel: **Chris Figures It Out**
+* 📺 French Channel: **[@ChrisAutodidacte](https://www.youtube.com/@ChrisAutodidacte)**
+* 🌐 Business & Consulting: **[chrisconseil.fr](https://chrisconseil.fr)** (Custom AI automation & software workflows)
+
